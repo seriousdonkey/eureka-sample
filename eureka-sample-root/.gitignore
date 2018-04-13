@@ -1,0 +1,12 @@
+/eureka-sample-root.iml
+/.idea/
+/eureka-client/eureka-client.iml
+/eureka-client-data/target/
+/eureka-client-data/eureka-client-data.iml
+/eureka-client-rest/target/
+/eureka-client-rest/eureka-client-rest.iml
+/eureka-discovery-client/target/
+/eureka-discovery-client/eureka-discovery-client.iml
+/eureka-service/target/
+/eureka-service/eureka-service.iml
+/eureka-client/target/
