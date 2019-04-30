@@ -32,7 +32,7 @@ public class PersonController {
 
     @RequestMapping(method = RequestMethod.GET)
     public List<PersonDto> persons() {
-        final String url = String.format("%s/persons/data", getBaseUrl());
+        final String url = String.format("%s/data/persons", getBaseUrl());
         final ResponseEntity<PersonDto[]> entity = restTemplate.getForEntity(url, PersonDto[].class);
         final PersonDto[] personDtos = entity.getBody();
         if (personDtos == null) {
@@ -43,7 +43,7 @@ public class PersonController {
 
     @RequestMapping(value = "by-lastname", method = RequestMethod.GET)
     public List<PersonDto> personsByLastname(@RequestParam("lastname") final String lastname) {
-        final String url = String.format("%s/persons/data/by-lastname?lastname=%s", getBaseUrl(), lastname);
+        final String url = String.format("%s/data/persons/by-lastname?lastname=%s", getBaseUrl(), lastname);
         final ResponseEntity<PersonDto[]> entity = restTemplate.getForEntity(url, PersonDto[].class);
         final PersonDto[] personDtos = entity.getBody();
         if (personDtos == null) {

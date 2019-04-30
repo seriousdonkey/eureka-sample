@@ -10,7 +10,6 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableAutoConfiguration
 public class EurekaClientRestApplication {
 
     @Bean
