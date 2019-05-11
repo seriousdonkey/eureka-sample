@@ -11,5 +11,4 @@ ENV MYSQL_DATABASE=eureka-sample
 ENV MYSQL_USER=eureka-sample
 ENV MYSQL_PASSWORD=eureka-sample
 
-
 ADD initial-script.sql /docker-entrypoint-initdb.d/
